@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公司名称</title>
+    <title>租车服务</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>欢迎来到我们公司的网站</h1>
-    <p>这里是公司简介...</p>
+    <header>
+        <h1>租车服务</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#cars">车辆展示</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>欢迎来到我们的租车服务</h2>
+            <p>提供多种车型，满足您的出行需求。</p>
+        </section>
+
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>我们是一家专业的汽车租赁公司，致力于为客户提供优质的服务。</p>
+        </section>
+
+        <section id="cars">
+            <h2>可租赁车辆</h2>
+            <div class="car-list">
+                <!-- 车辆信息 -->
+                <div class="car-item">
+                    <img src="car1.jpg" alt="车型1">
+                    <h3>车型1</h3>
+                    <p>价格：$50/天</p>
+                    <button>立即租用</button>
+                </div>
+                <!-- 更多车辆 -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <form action="#" method="post">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">发送信息</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 租车服务公司. 保留所有权利.</p>
+    </footer>
 </body>
 </html>
